@@ -1,14 +1,13 @@
-# Name: Phoenix Agunat
-# Date: 5/3/2026
-# Activity: Week 5 activity 2
-
 from flask import Flask, jsonify
 
 app = Flask(__name__)
+
 
 @app.route("/")
 def index():
     return jsonify({"status": "ok", "version": "1.0.0"})
 
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
+    
